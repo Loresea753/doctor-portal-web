@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+  font-family: 'Kanit', sans-serif;
+}
+
+nav {
+  background-color: #002d56;
+  border-bottom: 10px solid #ffc107 !important; 
+}
+
+ 
+
+
+.nav-buttom {
+  background-color: #002d56 !important;
+  border-top: 10px solid #ffc107 !important; 
+  color: hsl(0, 0%, 100%);
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+}
+
+.Other-Bg {
+  background-color: #EBEBEB !important;
+  color: #303030 !important;
+}
+
+.cv{
+  background-color: #EBEBEB !important;
+}
+.text-card{
+
+  color: #303030 !important;
+}
+.button-upload {
+  background-color: #FFFFFF !important;
+  border-color: #8F8F8F;
+  border-radius: 5px;
+  padding: 6px;
+
+}
+.button-yellow{
+  background-color: #ffc107 !important;
+}
+.button-text{
+  color: #303030 !important;
+}
+.button-blue{
+  background-color: #002D56 !important;
+  color: #FFFFFF !important;
+}
+.button-color-danger{
+  background-color: #FF0000 !important;
+  color: #FFFFFF !important;
+}
+.color-danger{
+  background-color: #FF0000 !important;
+  border-color: #FF0000 !important;
+}
+
+.button-add{
+  color: #002D56 !important;
+}
+.button-delete{
+  color: #002D56 !important;
+}
+.button-white{
+  background-color: #FFFFFF !important;
+  color: #002D56 !important;
+  border-color: #002D56 !important;
+}
+
+.button-white:active{
+  border-color: #FFFFFF !important;
+  box-shadow:0px 0px 0px 1px #002D56 inset !important;
+}
+
+.button-browseFiles{
+  color: #303030!important;
+  background-color: #FFFFFF !important;
+  border-color: #8F8F8F !important;
+}
+.button-expand{
+  color: #8F8F8F;
+}
+.color-separate{
+  background-color: #002242!important;
+}
+.icon{
+  color: #000000!important;
+}
+
+.dropdown-menu {
+  min-width: 7rem !important;
+}
+
+.nav-link {
+  transition: all 0.2s !important;
+  color: white !important;
+  
+}
+.nav-link:hover {
+  text-decoration: underline !important;
+}
+
+.tooltip-inner{
+  text-align: left;
+  min-width: 430px !important;
+}
+
+.full-height {
+  height: 48vh; 
+}
+.border-danger{
+  border-color: red;
+}
+.h-screen {
+  height: 100vh;
+  width: 100vw;
+}
+textarea{
+  min-height: 100px !important;
+
+}
+/* 
+textarea {
+  min-height: 61px !important;
+} */
+
+
+
+
