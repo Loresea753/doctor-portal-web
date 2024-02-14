@@ -1,0 +1,109 @@
+{
+    "navbar":{
+      "join" : "Join with us",
+      "status" : "Check status",
+      "contact" : "Contract us"
+    },
+    "form":{
+      "join" : "Join with us",
+      "title_thai":"Title (Thai)",
+      "title_eng":"Title (English)",
+      "name_eng": "Name (English)",
+      "name_thai": "Name (Thai)",
+      "surname_eng": "Surname (English)",
+      "surname_thai": "Surname (Thai)",
+      "personal_info":"Personal Information",
+      "position":"Position you are applying for",
+      "license_number":"Professional License Number",
+      "send" : "Send",
+      "phone": "Phone",
+      "cv" : "Application documents (CV document must be uploaded)",
+      "title_specialty_n_subspecialty":"Specialty and Subspecialty",
+      "specialty":"Specialty",
+      "subspecialty":"Subspecialty",
+      "how_to_find":"How did you hear about us?",
+      "other_info":"Additional information for official website promotion",
+      "notSpecified": "Not specified",
+      "addEducation": "Add educational history information"
+    },
+    "modal":{
+      "detail":"Application details",
+      "name_eng": "Name (English)",
+      "name_thai": "Name (Thai)",
+      "personal_info":"Personal Information",
+      "position":"Position you are applying for",
+      "license_number":"Professional License Number",
+      "contact":"Contact",
+      "phone": "Phone",
+      "cv" : "Application documents",
+      "title_specialty_n_subspecialty":"Specialty and Subspecialty",
+      "how_to_find":"How did you hear about us?",
+      "other_info":"Additional information for official website promotion",
+      "modal_Education": 
+          {
+            "education_record": "Education Record",
+            "level": "Level",
+            "qualification_thai": "Qualification (thai)",
+            "qualification_eng": "Qualification (eng)",
+            "department": "Department",
+            "university": "University",
+            "country": "Country",
+            "start_year": "Start Year",
+            "end_year": "End Year"
+          }
+    },
+    "about_me": {
+      "contact": "contact",
+      "send" : "Send",
+      "name": "Vejthani Hospital",
+      "company": "VEJTHANI PUBLIC COMPANY LIMITED",
+      "address1": "1 Ladprao Road 111, Klong-Chan, Bangkapi, Bangkok, 10240",
+      "address": "Address",
+      "phone": "Phone",
+      "fax": "Fax",
+      "email": "Email",
+      "travel": "How to travel",
+      "bus": "Bus",
+      "train": "BTS/MRT"
+    },
+    "tracking": {
+      "join" : "Join with us",
+      "join1": "Join with us",
+      "send": "send",
+      "or": "or",
+      "status": "Status Cheack",
+      "Specify" : "Specify number",
+      "display": "Please enter your application number to check your application status.",
+      "notFound" : "Application not found",
+      "notFoundAgain" : "Please check the application number again.",
+      "sendSuccess":"Send an application",
+      "sendSuccess1":"The system has received your application successfully.",
+      "Unsubscribe": "Unsubscribe",
+      "cheack": "Check the application",
+      "cheack1": "Application is currently being reviewed.",
+      "interview": "Interview results",
+      "interview1":"In process of interview",
+      "interview2":"Passed the interview",
+      "interview3":"Didn't pass the interview"
+    },
+    "button":{
+      "close":"Close",
+      "ok":"OK",
+      "cancel":"Cancel",
+      "back":"Back",
+      "next":"Next",
+      "previous":"Previous",
+      "submit":"Submit"
+    },
+    "tooltip": {
+      "other_info": {
+        "direction": "direction",
+        "tabIndex1": "ระบุชื่อวุฒิบัตร สาขาเฉพาะทาง และ Certification สำคัญเป็นภาษาอังกฤษ เรียงลำดับจากใหม่ไปเก่า ดังตัวอย่าง Eng",
+        "tabIndex2": "ระบุชื่อโรคสำคัญเป็นภาษาอังกฤษ ดังตัวอย่าง Eng",
+        "tabIndex3": "ระบุชื่อหัตถการสำคัญโดยระบุเป็นชื่อเต็มและตัวย่อภาษาอังกฤษ ดังตัวอย่าง Eng",
+        "tabIndex4": "ระบุข้อมูลเป็นภาษาอังกฤษ เรียงลำดับจากใหม่ไปเก่า ดังตัวอย่าง Eng",
+        "tabIndex5": "ระบุข้อมูลเรียงลำดับจากใหม่ไปเก่า ดังตัวอย่าง Eng",
+        "tabIndex6": "ระบุชื่องานวิจัย ดังตัวอย่าง Eng"
+      }
+    }
+  }

@@ -1,0 +1,29 @@
+{
+  "navbar": {
+    
+  },
+  "Urgent_Doctor" :{
+    "DoctorUrgent": "แพทย์เร่งด่วน",
+    "SearchInfo": "ค้นหาข้อมูล",
+    "SearchAppFrom" : "ค้นหาข้อมูลใบสมัคร",
+    "AddInfo" : "เพิ่มข้อมูล",
+    "Name" : "ชื่อ-นามสกุล",
+    "Specialty": "สาขาวิชา (Specialty)",
+    "Subspecialty" : "อนุสาขา (Sub-Specialty)",
+    "DateStart": "วันที่สร้างข้อมูล",
+    "ManageInfo": "จัดการข้อมูล"
+  },
+  "modal":{
+   
+  },
+
+  "button":{
+    "close":"ปิด",
+    "ok":"ตกลง",
+    "cancel":"ยกเลิก",
+    "back":"กลับ",
+    "next":"ถัดไป",
+    "previous":"ก่อนหน้า",
+    "submit":"ยืนยัน"
+  }
+}

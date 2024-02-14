@@ -1,15 +1,12 @@
-import React, { createContext, useState, useEffect } from "react";
-import Doctor_List_DataTable from "./doctor_list_components/Doctor_List_DataTable";
+import React, { useEffect, useRef, useState } from "react";
+import DataTables from "datatables.net-bs5";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-
-const testaa = createContext(null);
-function Doctor_List_Container() {
+function Registration_DataTable() {
   const { t } = useTranslation();
-
+  const tableRef = useRef(null);
   const [data, setData] = useState([
     {
-      name: "John Doe ",
+      name: "John Doe",
       specialty: "Cardiology",
       subSpecialty: "Interventional Cardiology",
       createdAt: "2023-01-15",
@@ -136,56 +133,70 @@ function Doctor_List_Container() {
     },
   ]);
 
+  useEffect(() => {
+    const table = new DataTables(tableRef.current, {
+      searching: false,
+      paging: true,
+      pagingType: "full_numbers",
+      ordering: false,
+    });
+    return () => table.destroy();
+  }, []);
   return (
-    <div className="container mb-5 mt-3">
-      <div className="card">
-        {/* <div className="card-header my-2">แพทเร่งด่วน</div> */}
-        <div className="card-body d-flex flex-column gap-3">
-          <div className="border border-0 button-blue p-2 fw-normal fs-6 ">
-            {t("Urgent_Doctor.DoctorUrgent")}
-          </div>
-          <div className="card py-3 px-3  ">
-            <div className="row d-flex justify-justify-content-between ">
-              <div className="col-6">
-                <b className="fs-4">{t("Urgent_Doctor.DoctorUrgent")}</b>
-              </div>
-              <div className="col-6 text-end ">
-                <Link to={"/create"}>
-                  <button className="btn btn-warning">
-                    {t("Urgent_Doctor.AddInfo")}
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className="row d-flex justify-content-center">
-              <div className="col-md-6">
-                <label htmlFor="">{t("Urgent_Doctor.SearchInfo")}</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder={t("Urgent_Doctor.SearchAppFrom")}
-                  // value={searchValue}
-                  // onChange={(e) => setSearchValue(e.target.value)}
-                />
-              </div>
-            </div>
-            <div className="row d-flex justify-content-center mt-3">
-              <div className="col-auto">
-                <button className="btn button-blue ">
-                  {t("button.Search")}
-                </button>
-              </div>
-            </div>
-            <div className="table-responsive-md  mt-3">
-              <testaa.Provider value={{ data, setData }}>
-                <Doctor_List_DataTable />
-              </testaa.Provider>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <table
+        ref={tableRef}
+        className="table table-striped table-bordered w-100 "
+      >
+        <thead>
+          <tr className="align-middle">
+            <th className="table-background text-nowrap text-center">
+              {t("Register.ApplicationNumber")}
+            </th>
+            <th className="table-background text-center">
+              {t("Register.DateStart")}
+            </th>
+            <th className="table-background text-center">
+              {t("Urgent_Doctor.Name")}
+            </th>
+            <th className="table-background text-nowrap text-center">
+              {t("Register.Position")}
+            </th>
+            <th className="table-background text-center">
+              {t("Urgent_Doctor.Specialty")}
+            </th>
+            <th className="table-background text-center">
+              {t("Urgent_Doctor.Subspecialty")}
+            </th>
+            <th className="table-background text-nowrap text-center">
+              {t("Register.Phone")}
+            </th>
+            <th className="table-background text-center">
+              {t("Register.Status")}
+            </th>
+            <th className="table-background text-center">
+              {t("Urgent_Doctor.ManageInfo")}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((data, index) => (
+            <tr key={index} className="text-center">
+              <td>{data.name}</td>
+              <td>{data.specialty}</td>
+              <td>{data.subSpecialty}</td>
+              <td className="text-nowrap">{data.createdAt}</td>
+              <td>จัดการ</td>
+              <td>จัดการ</td>
+              <td>จัดการ</td>
+              <td>จัดการ</td>
+              <td>จัดการ</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
   );
 }
-export { testaa };
-export default Doctor_List_Container;
+
+export default Registration_DataTable;

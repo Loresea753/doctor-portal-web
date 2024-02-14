@@ -1,0 +1,52 @@
+{
+  "navbar": {
+    "DoctorUrgent": "แพทย์เร่งด่วน",
+    "register": "รายการใบสมัคร"
+  },
+  "form": {
+    "title_thai": "คำนำหน้า (ภาษาไทย)",
+    "title_eng": "คำนำหน้า (ภาษาอังกฤษ)",
+    "name_eng": "ชื่อ (ภาษาอังกฤษ)",
+    "name_thai": "ชื่อ (ภาษาไทย)",
+    "surname_eng": "นามสกุล (ภาษาอังกฤษ)",
+    "surname_thai": "นามสกุล (ภาษาไทย)",
+    "personal_info": "ข้อมูลส่วนบุคคล",
+    "license_number": "เลขที่ใบประกอบวิชาชีพเวชกรรม",
+    "phone": "เบอร์โทรศัพท์",
+    "cv": "เอกสารหน้าสมุดบัญชีธนาคาร (Book Bank)",
+    "title_specialty_n_subspecialty": "สาขาวิชา (Specialty) และอนุสาขา (Sub-Specialty)",
+    "specialty": "สาขาวิชา (Specialty)",
+    "subspecialty": "อนุสาขา (Sub-Specialty)",
+    "notSpecified": "ยังไม่ระบุ"
+  },
+  "Urgent_Doctor": {
+    "DoctorUrgent": "แพทย์เร่งด่วน",
+    "DoctorUrgentDetail": "รายละเอียดแพทย์เร่งด่วน",
+    "SearchInfo": "ค้นหาข้อมูล",
+    "SearchAppFrom": "ค้นหาข้อมูลใบสมัคร",
+    "AddInfo": "เพิ่มข้อมูล",
+    "Name": "ชื่อ-นามสกุล",
+    "Specialty": "สาขาวิชา (Specialty)",
+    "Subspecialty": "อนุสาขา (Sub-Specialty)",
+    "DateStart": "วันที่สร้างข้อมูล",
+    "ManageInfo": "จัดการ"
+  },
+  "Register" : {
+    "ApplicationList": "รายการใบสมัคร",
+    "ApplicationListDetail":  "รายละเอียดรายการใบสมัคร",
+    "Status": "สถานะ",
+    "ApplicationNumber": "เลขที่ใบสมัคร",
+    "DateStart": "วันที่สมัคร",
+    "Position" : "ตำแหน่ง",
+    "Phone" : "เบอร์โทร"
+  },
+
+  "button": {
+    "Search": "ค้นหา",
+    "Confirm": "ตกลง",
+    "Cancel": "ยกเลิก",
+    "Close": "ปิด",
+    "Save": "บันทึก",
+    "Back" : "ย้อนกลับ"
+  }
+}

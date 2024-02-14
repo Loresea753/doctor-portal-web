@@ -40,19 +40,19 @@ function Navbar() {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to="/" className="nav-link ">
-                  {t("navbar.join")}
+                  {t("navbar.DoctorUrgent")}
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/tracking" className="nav-link ">
-                  {t("navbar.status")}
+                <Link to="/register" className="nav-link ">
+                  {t("navbar.Register")}
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="/About_Me" className="nav-link ">
                   {t("navbar.contact")}
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="btn-group">

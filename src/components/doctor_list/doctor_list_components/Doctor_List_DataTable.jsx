@@ -1,135 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import DataTables from "datatables.net-bs5";
+import { useTranslation } from "react-i18next";
+import { testaa } from "../Doctor_List_Container";
 function Doctor_List_DataTable() {
+  const { t } = useTranslation();
   const tableRef = useRef(null);
-  const [data, setData] = useState([
-    {
-      name: "John Doe",
-      specialty: "Cardiology",
-      subSpecialty: "Interventional Cardiology",
-      createdAt: "2023-01-15",
-    },
-    {
-      name: "Jane Smith",
-      specialty: "Dermatology",
-      subSpecialty: "Cosmetic Dermatology",
-      createdAt: "2023-02-20",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-    {
-      name: "xxxxx",
-      specialty: "yyyyy",
-      subSpecialty: "zzzz",
-      createdAt: "ccccc0",
-    },
-  ]);
+  const { data } = useContext(testaa);
 
   useEffect(() => {
     const table = new DataTables(tableRef.current, {
@@ -139,24 +15,35 @@ function Doctor_List_DataTable() {
     });
     return () => table.destroy();
   }, []);
+
   return (
     <>
       <table
         ref={tableRef}
-        className="table table-responsive  table-striped table-bordered w-100 "
+        className="table table-striped table-bordered w-100 "
       >
         <thead>
           <tr>
-            <th>ชื่อ-นามสกุล</th>
-            <th>สาขาวิชา (Specialty)</th>
-            <th>อนุสาขา (Sub-Specialty)</th>
-            <th>วันที่สร้างข้อมูล</th>
-            <th>จัดการ</th>
+            <th className="table-background align-middle text-center">
+              {t("Urgent_Doctor.Name")}
+            </th>
+            <th className="table-background align-middle text-center">
+              {t("Urgent_Doctor.Specialty")}
+            </th>
+            <th className="table-background align-middle text-center">
+              {t("Urgent_Doctor.Subspecialty")}
+            </th>
+            <th className="table-background align-middle text-center">
+              {t("Urgent_Doctor.DateStart")}
+            </th>
+            <th className="table-background align-middle text-center">
+              {t("Urgent_Doctor.ManageInfo")}
+            </th>
           </tr>
         </thead>
         <tbody>
           {data.map((data, index) => (
-            <tr key={index}>
+            <tr key={index} className="text-center">
               <td>{data.name}</td>
               <td>{data.specialty}</td>
               <td>{data.subSpecialty}</td>

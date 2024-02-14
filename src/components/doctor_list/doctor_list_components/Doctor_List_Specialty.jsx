@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import Doctor_List_Select_Specialty from "./Doctor_List_Select_Specialty";
 import { IoAddCircleOutline } from "react-icons/io5";
 import { RiDeleteBinLine } from "react-icons/ri";
-import {doctor_list_context} from "../Doctor_List_Create";
+import { doctor_list_context } from "../Doctor_List_Create";
 import { useTranslation } from "react-i18next";
 import { Tooltip } from "bootstrap";
 import { renderToString } from "react-dom/server";
@@ -97,11 +97,11 @@ function Form_Specialty_Info() {
         </div>
       </div>
       <div className="row">
-        <div className="col-5">
+        <div className="col-sm-5">
           <label htmlFor="">{t("form.specialty")}</label>
           {/* <label htmlFor="">สาขาวิชา (Specialty)</label> */}
         </div>
-        <div className="col-5">
+        <div className="col-sm-5">
           <label htmlFor="">{t("form.subspecialty")}</label>
           {/* <label htmlFor="">อนุสาขา (Sub-Specialty)</label> */}
         </div>
@@ -111,28 +111,30 @@ function Form_Specialty_Info() {
           <div className="row align-items-center mt-3 gx-3">
             {inputDiv.html}
 
-            <div className="col-1 d-flex justify-content-between  ">
-              {Divs.length > 1 ? (
+            {Divs.length > 1 ? (
+              <div className="col-1 d-flex justify-content-center">
                 <RiDeleteBinLine
-                  size={20}
+                  size={25}
                   role="button"
                   className="button-delete"
                   onClick={(e) => handleRemoveDiv(inputDiv.id)}
                 />
-              ) : (
-                <></>
-              )}
-              {Divs.length - 1 == index ? (
+              </div>
+            ) : (
+              <></>
+            )}
+            {Divs.length - 1 == index ? (
+              <div className="col-1 d-flex justify-content-center ">
                 <IoAddCircleOutline
-                  size={20}
+                  size={25}
                   role="button"
                   className="button-add"
                   onClick={(e) => handleAddDiv(inputDiv.id + 1)}
                 />
-              ) : (
-                <></>
-              )}
-            </div>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </React.Fragment>
       ))}

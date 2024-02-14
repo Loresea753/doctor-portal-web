@@ -9,7 +9,11 @@ nav {
   border-bottom: 10px solid #ffc107 !important; 
 }
 
- 
+.table-background {
+  /* --bs-bg-opacity: 1; */
+  background-color: #002d56 !important;
+  color: #EBEBEB !important;
+}
 
 
 .nav-buttom {

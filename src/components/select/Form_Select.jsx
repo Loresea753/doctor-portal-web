@@ -5,42 +5,38 @@ import Select from "react-select";
 import $ from "jquery";
 
 function Form_Select(props) {
- 
   const [click, setClick] = useState(false);
   const selectRef = useRef(null);
   const { t } = useTranslation();
   const customClass = {
     control: () => {
       return `form-select w-100 m-0 p-0 ${
-        props.groupClass ? props.groupClass : ""
+        props?.groupClass ? props?.groupClass : ""
       }`;
     },
     option: () => "m-0 p-1",
-    menu: () => "z-5",
+    // menu: () => "z-10",
   };
 
   $(selectRef).on("focus", function () {
     console.log($(selectRef));
   });
 
-  const handleChangeSelect = (e) => {
-    console.log("menu is opened");
-    setClick(false);
-    return "#dc3545";
-  };
+  // const handleChangeSelect = () => {
+  //   // console.log("menu is opened");
+  //   // setClick(false);
+  //   return "#dc3545";
+  // };
 
   const customStyles = {
     control: (base, state) => {
-    
       return {
         ...base,
-        border: "1px solid #dee2e6",  
+        border: "1px solid #dee2e6",
 
         "&:focus-within": {
           // borderColor: "#dc3545" ,
-          borderColor: `${
-            state.isFocused && click ? "#86b7fe" : handleChangeSelect()
-          }`,
+          borderColor: `${state.isFocused && click ? "#86b7fe" : "#dc3545"}`,
           outline: "0",
           boxShadow: `${
             state.isFocused && click
@@ -49,11 +45,6 @@ function Form_Select(props) {
           }`,
         },
         "&:hover": {},
-        // "&:focus-within": {
-        //   borderColor: "#86b7fe",
-        //   outline: "0 ",
-        //   boxShadow: "0 0 0 0.25rem rgba(13,110,253,.25) ",
-        // },
       };
     },
     dropdownIndicator: () => ({ display: "block", opacity: 0 }),
@@ -64,14 +55,13 @@ function Form_Select(props) {
   };
 
   const handleChange = (e) => {
-    props.handle(e, props.name);
+    props?.handle(e, props.name);
   };
 
   return (
     <div
-      onMouseDown={(e) => {
+      onMouseDown={() => {
         setClick(true);
-        console.log("clicked");
       }}
     >
       <Select
@@ -79,6 +69,7 @@ function Form_Select(props) {
         styles={customStyles}
         classNames={customClass}
         components={customComponent}
+        menuPortalTarget={document.body}
         options={props.option}
         placeholder={t("form.notSpecified")}
         value={props.value?.value == "" ? "" : props.value}
@@ -87,6 +78,7 @@ function Form_Select(props) {
         required={props.required}
         id={props.testName}
         isDisabled={props.disabled}
+        onBlur={() => setClick(false)}
       />
     </div>
   );

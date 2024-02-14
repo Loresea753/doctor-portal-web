@@ -1,0 +1,78 @@
+{
+  "navbar": {
+    "DoctorUrgent": "DoctorUrgent",
+    "Register": "Register"
+  },
+  "Urgent_Doctor": {
+    "DoctorUrgent": "DoctorUrgent",
+    "DoctorUrgentDetail": "DoctorUrgentDetail",
+    "SearchInfo": "SearchInfo",
+    "SearchAppFrom": "SearchAppFrom",
+    "AddInfo": "Add",
+    "Name": "Name",
+    "Specialty": "Specialty",
+    "Subspecialty": "Sub-Specialty",
+    "DateStart": "DateStart",
+    "ManageInfo": "ManageInfo"
+  },
+  "Register" : {
+    "ApplicationList": "Application List",
+    "ApplicationListDetail":  "Applicationlistdetail",
+    "Status": "Status",
+    "ApplicationNumber": "Application Number",
+    "DateStart": "Date Start",
+    "Position" : "Position",
+    "Phone" : "Phone"
+  },
+  "form": {
+    "title_thai": "Title (Thai)",
+    "title_eng": "Title (English)",
+    "name_eng": "Name (English)",
+    "name_thai": "Name (Thai)",
+    "surname_eng": "Surname (English)",
+    "surname_thai": "Surname (Thai)",
+    "personal_info": "Personal Information",
+    "license_number": "Professional License Number",
+    "phone": "Phone",
+    "cv": "Application documents (CV document must be uploaded)",
+    "title_specialty_n_subspecialty": "Specialty and Subspecialty",
+    "specialty": "Specialty",
+    "subspecialty": "Subspecialty",
+    "notSpecified": "Not specified"
+  },
+  "modal": {
+    "detail": "Application details",
+    "name_eng": "Name (English)",
+    "name_thai": "Name (Thai)",
+    "personal_info": "Personal Information",
+    "position": "Position you are applying for",
+    "license_number": "Professional License Number",
+    "contact": "Contact",
+    "phone": "Phone",
+    "cv": "Application documents",
+    "title_specialty_n_subspecialty": "Specialty and Subspecialty",
+    "how_to_find": "How did you hear about us?",
+    "other_info": "Additional information for official website promotion",
+    "modal_Education": {
+      "education_record": "Education Record",
+      "level": "Level",
+      "qualification_thai": "Qualification (thai)",
+      "qualification_eng": "Qualification (eng)",
+      "department": "Department",
+      "university": "University",
+      "country": "Country",
+      "start_year": "Start Year",
+      "end_year": "End Year"
+    }
+  },
+ 
+  "button": {
+    "Search": "Search",
+    "Confirm": "Confirm",
+    "Cancel": "Cancel",
+    "Close": "Close",
+    "Save": "Save",
+    "Back" : "Back"
+  }
+
+}

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { doctor_list_context } from "../Doctor_List_Create";
-// import selectSpecialty from "../dataTxT/selectSpecialty.json";
+import selectSpecialty from "../../dataTxT/selectSpecialty.json";
 import $ from "jquery";
 import { useTranslation } from "react-i18next";
 import Form_Select from "../../select/Form_Select";
@@ -66,10 +66,10 @@ function From_Select_Specialty({ id }) {
           handle={handleChange}
         />
       </div>
-      <div className="col-6">
+      <div className="col-5">
         <Form_Select
           disabled={valueSelect.specialty == ""}
-          option={""}
+          option={selectSpecialty?.[valueSelect.specialty]}
           value={{
             label: valueSelect.subSpecialty,
             value: valueSelect.subSpecialty,
